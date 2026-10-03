@@ -5,9 +5,12 @@ export const maxDuration = 60;
 export const dynamic = 'force-dynamic';
 
 /**
- * OSIRIS — Real-Time Geopolitical Events (GDELT 2.0 GeoJSON API)
- * Source: GDELT Project — completely free, no auth required
- * Replaces the old RSS scraper with actual GDELT geo-coded events.
+ * OSIRIS — Disaster Alerts (GDACS RSS)
+ * Source: GDACS (Global Disaster Alert and Coordination System) — free, no auth.
+ *
+ * NOTE ON NAMING: despite this route's path, it reads GDACS disaster alerts,
+ * NOT GDELT. (Legacy misnomer — kept for route stability.) For actual GDELT
+ * 2.0 event records, see /api/gdelt-events.
  */
 
 // RSS carries its payload XML-escaped, so every GDACS report link arrives as
